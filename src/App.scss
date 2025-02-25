@@ -1,0 +1,64 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+
+  &__container {
+    // padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    // border-bottom: 1px solid #eee;
+    gap: 30px;
+    // padding-top: 10px;
+  }
+
+  &__items-left {
+    color: #555;
+  }
+
+  &__filters {
+    display: flex;
+    gap: 7px;
+
+    .todo-app__filter-button {
+      padding: 5px 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background: #444444;
+        color: #fff;
+      }
+
+      &--active {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  &__clear-button {
+    border: none;
+    background: #848484;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background: #444444;
+    }
+  }
+  &__wrapper{
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.todo-item {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: rgb(244, 244, 244);
+  align-items: center;
+
+  &__checkbox {
+    transform: scale(1.5);
+  }
+
+  &__checkbox:checked + &__label .todo-item__text {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__button {
+    padding: 5px 7px;
+    border-radius: 4px;
+
+    &--edit {
+      background-color: #4caf50;
+      color: white;
+      
+      &:hover{
+        background-color: #449b47;
+      }
+    }
+  }
+}
